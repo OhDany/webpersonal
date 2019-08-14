@@ -85,12 +85,11 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
 
-    <div class="site-blocks-cover overlay" style="background-image: url('{% static 'core/images/hero_bg_1.jpg' %}');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('{% block background %}{% endblock %}');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="mb-4">Turn On The Feeling With Music</h1>
-            <p><a href="#" class="btn btn-primary px-4 py-3">Download Template</a></p>
+            {% block headers %}{% endblock %}
           </div>
         </div>
       </div>
