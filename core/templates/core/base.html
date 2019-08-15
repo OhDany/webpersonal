@@ -46,23 +46,7 @@
                   <li class="active">
                     <a href="{% url 'home' %}">Home</a>
                   </li>
-                  <li><a href="dj.html">DJs</a></li>
-                  <li class="has-children">
-                    <a href="shows.html">Shows</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Top 20 of The Week</a></li>
-                      <li><a href="#">Featured Artist</a></li>
-                      <li><a href="#">Interviews</a></li>
-                      <li class="has-children">
-                        <a href="#">Sub Menu</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
+                  <li><a href="{% url 'djs' %}">DJs</a></li>
                   <li><a href="{% url 'portfolio' %}">Events</a></li>
                   <li><a href="{% url 'about' %}">About</a></li>
                   <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -141,18 +125,18 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">DJs</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Top 20 of the week</a></li>
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="{% url 'djs' %}">DJs</a></li>
+                  <li><a href="{% url 'home' %}">News</a></li>
+                  <li><a href="{% url 'home' %}">Top 20 of the week</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Membership</a></li>
+                  <li><a href="{% url 'about' %}">About Us</a></li>
+                  <li><a href="{% url 'home' %}">Privacy Policy</a></li>
+                  <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                  <li><a href="{% url 'home' %}">Membership</a></li>
                 </ul>
               </div>
             </div>
