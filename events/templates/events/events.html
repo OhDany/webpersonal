@@ -16,10 +16,12 @@
       <div class="row">
         {% for project in projects %}
         <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-          <a href="single.html"><img src="{{ project.image.url }}" alt="Image" class="img-fluid"></a>
+            <img src="{{ project.image.url }}" alt="Image" class="img-fluid">
           <div class="p-4 bg-white">
             <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-            <h2 class="h5 text-black mb-3"><a href="single.html">{{ project.title }}</a></h2>
+              {% if project.link %}
+                <h2 class="h5 text-black mb-3"><a href="{{project.link}}">{{ project.title }}</a></h2>
+              {% endif %}
           </div>
         </div>
         {% endfor %}
